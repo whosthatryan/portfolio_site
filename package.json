@@ -2,9 +2,11 @@
   "name": "unit2_project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/whosthatryan/unit2_project/issues"
   },
-  "homepage": "https://github.com/whosthatryan/unit2_project#readme"
+  "homepage": "https://github.com/whosthatryan/unit2_project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
