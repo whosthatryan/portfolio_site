@@ -6,6 +6,11 @@ class Layout extends React.Component {
             <html>
                 <head>
                     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+                    </script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+                    </script>
+                    <link rel="stylesheet" href="/css/style.css"/>
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"/>
                     <title >.wholeheartedly</title>
                 </head>
@@ -20,6 +25,11 @@ class Layout extends React.Component {
                 </nav>
                     {this.props.children}
                     <footer>
+                    {/* <script>
+                        $( function() {
+                            $( "#draggable" ).draggable()
+                        } );
+                        </script> */}
                     </footer>
                 </body>
             </html>
