@@ -9,9 +9,10 @@ class New extends React.Component {
             <h1 style={{fontSize: '30px'}}>.submit</h1>
             <form action="/wholeheartedly" method="POST">
                 .name  <input type="text" name="name" /><br/>
-                .description  <input type="text" name="description" /><br/>
-                .image  <input type="text" name="img" /><br/>
-                .price  <input type="number" name="price" /><br/>
+                .title  <input type="text" name="title" /><br/>
+                .art  <input type="text" name="art" /><br/>
+                .audio  <input type="text" name="audio" /><br/>
+                .video  <input type="text" name="video" /><br/>
                 .available  <input type="checkbox" name="isForSale" /><br/>
                 <input type="submit" name="" value=".submit"/>
              </form>

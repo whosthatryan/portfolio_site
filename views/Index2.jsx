@@ -7,7 +7,7 @@ class Index2 extends React.Component {
     // const product = this.props.product
       return (
           <Layout>
-              <div>
+              <div id="container">
                   <div id="draggable" className="ui-widget-content">
                   <div id="mydivheader">.storm</div>
                     <video 

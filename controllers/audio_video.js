@@ -3,21 +3,30 @@ const router = express.Router();
 const Product = require('../models/products.js');
 
 //INDEX PAGE
+router.get('/index', (req, res) => {
+    Product.find({}, (err, allProducts) => {
+        res.render('../views/Index', {
+            product: allProducts
+        });
+    });
+});
+
+//INDEX2 PAGE
 router.get('/', (req, res) => {
     Product.find({}, (err, allProducts) => {
-        res.render('views/Index2', {
+        res.render('../views/Index2', {
             product: allProducts
         });
     });
 });
 
 //NEW
-router.get('/wholeheartedly/new', (req, res)=>{
-    res.render('views/New');
+router.get('/new', (req, res)=>{
+    res.render('../views/New'); 
 });
 
 //DELETE
-router.delete('/wholeheartedly/:id', (req, res) => {
+router.delete('subissions/:id', (req, res) => {
     Product.findByIdAndRemove({_id: req.params.id}, (error, deletedProduct) => {
         if (deletedProduct) {
         console.log('deletedProduct');
@@ -29,7 +38,7 @@ router.delete('/wholeheartedly/:id', (req, res) => {
 });
 
 //UPDATE
-router.put('/:id', (req, res) => {
+router.put('submissions/:id', (req, res) => {
     Product.findByIdAndUpdate({_id: req.params.id}, {...req.body}, (error, updatedProduct) => {  
         if (updatedProduct) {
                 console.log(updatedProduct); 
@@ -77,7 +86,7 @@ router.get('/:id/edit', (req, res) => {
 
 //SHOW PAGE
 router.get('/:id', (req, res)=>{
-    Product.findById(req.params.index, (err, foundProduct)=>{
+    Product.findById(req.params.id, (err, foundProduct)=>{
         res.render('Show', {
             product: foundProduct
         });

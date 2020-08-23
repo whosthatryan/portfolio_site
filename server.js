@@ -27,15 +27,6 @@ app.engine('jsx', require('express-react-views').createEngine());
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
 
-//INDEX PAGE
-app.get('/wholeheartedly', (req, res) => {
-    Product.find({}, (err, allProducts) => {
-        res.render('Index2', {
-            product: allProducts
-        });
-    });
-});
-
 const indexController = require('./controllers/audio_video.js');
 app.use('/wholeheartedly', indexController);
 
