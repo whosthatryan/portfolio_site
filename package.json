@@ -23,9 +23,12 @@
   },
   "homepage": "https://github.com/whosthatryan/unit2_project#readme",
   "dependencies": {
+    "@shopify/draggable": "^1.0.0-beta.8",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-react-views": "^0.11.0",
+    "jquery": "^3.5.1",
+    "jquery-ui": "^1.12.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.10.0",
     "react": "^16.13.1",

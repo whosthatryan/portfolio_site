@@ -8,15 +8,11 @@ class Index2 extends React.Component {
     return (
       <Layout>
         <div>
-          <div id="draggable">
-            <div id="mydivheader" className="handle">
-              .wholeheartedly
-            </div>
+          <div id="draggable" className="ui-widget-content">
+            <div id="mydivheader">.wholeheartedly</div>
             <video
-              style={{ borderRadius: "5%" }}
+              style={({ width: "400px" }, { height: "400px" })}
               controls
-              width="400"
-              height="400"
               autoplay
               loop
               muted
@@ -30,6 +26,14 @@ class Index2 extends React.Component {
                 <a href="storm.mp4">link to the video</a> instead.
               </p>
             </video>
+          </div>
+          <div id="draggable" className="ui-widget-content">
+            <div id="mydivheader">.wholeheartedly</div>
+            <audio controls>
+              <source src="../audio/half4.mp3" type="audio/mpeg" />
+              <source src="../audio/half4.wav" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
           </div>
         </div>
       </Layout>
