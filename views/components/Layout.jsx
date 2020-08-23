@@ -38,6 +38,17 @@ class Layout extends React.Component {
                         </a>
                         <a style={{fontSize: '15px'}}href='wholeheartedly/new' className='mt-4 ml-4'>.submit
                         </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a style={{fontSize: '35px', color: '#3274dc'}} class="navbar-link">
+                            .releases
+                            </a>
+
+                            <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                air volee
+                            </a>
+                        </div>
+                    </div>
                     </div>
                     </nav>
                     {this.props.children}

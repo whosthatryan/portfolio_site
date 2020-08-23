@@ -2,7 +2,7 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const Layout = require('./components/Layout.jsx');
 
-class Index2 extends React.Component {
+class Airvolee extends React.Component {
     render() {
     // const product = this.props.product
       return (
@@ -40,4 +40,4 @@ class Index2 extends React.Component {
     ReactDOM.render(<Index2/>, document.body);
 }
 
-module.exports = Index2;
+module.exports = Airvolee;
