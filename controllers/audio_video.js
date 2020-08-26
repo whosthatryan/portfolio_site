@@ -3,28 +3,42 @@ const router = express.Router();
 const Product = require('../models/products.js');
 
 //INDEX PAGE
-router.get('/', (req, res) => {
+router.get('/index', (req, res) => {
     Product.find({}, (err, allProducts) => {
-        res.render('views/Index2', {
+        res.render('../views/Index', {
             product: allProducts
         });
     });
 });
 
+//INDEX2 PAGE
+router.get('/', (req, res) => {
+    Product.find({}, (err, allProducts) => {
+        res.render('../views/Index2', {
+            product: allProducts
+        });
+    });
+});
+
+//AIR VOLEE
+router.get('/', (req, res) => {
+        res.render('../views/Airvolee');
+    });
+
 //NEW
-router.get('/wholeheartedly/new', (req, res)=>{
-    res.render('views/New');
+router.get('/new', (req, res)=>{
+    res.render('../views/New'); 
 });
 
 //DELETE
-router.delete('/wholeheartedly/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     Product.findByIdAndRemove({_id: req.params.id}, (error, deletedProduct) => {
         if (deletedProduct) {
         console.log('deletedProduct');
         } else {
             console.log(error);
         }
-        res.redirect('/wholeheartedly');
+        res.redirect('/wholeheartedly/index');
     });
 });
 
@@ -36,6 +50,7 @@ router.put('/:id', (req, res) => {
             } else {
                 console.log(error);
             };
+            res.redirect('/wholeheartedly/index')
     });
 });
 
@@ -55,7 +70,7 @@ router.post('/', (req, res)=>{
     console.log(req.body.price);
     Product.create(req.body, (error, createdProduct) => {
         if (createdProduct) {
-            res.redirect('/wholeheartedly')
+            res.redirect('/wholeheartedly/index')
         } else {
             console.log(error, 'thats the problem')
         };
@@ -65,19 +80,19 @@ router.post('/', (req, res)=>{
 //EDIT
 router.get('/:id/edit', (req, res) => {
     Product.findById(req.params.id, (error, foundProduct) => {
-        if (foundProduct) {
-            console.log(foundProduct)
+        // if (foundProduct) {
+        //     console.log(foundProduct)
             res.render('Edit', {product: foundProduct});
-        } else {
-            console.log(error);
-        }
-        res.redirect('./wholeheartedly');
+        // } else {
+        //     console.log(error);
+        // }
+        // res.redirect('/wholeheartedly');
     });
 });
 
 //SHOW PAGE
 router.get('/:id', (req, res)=>{
-    Product.findById(req.params.index, (err, foundProduct)=>{
+    Product.findById(req.params.id, (err, foundProduct)=>{
         res.render('Show', {
             product: foundProduct
         });

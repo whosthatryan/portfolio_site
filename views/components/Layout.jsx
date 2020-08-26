@@ -32,11 +32,13 @@ class Layout extends React.Component {
                     <div className="navbar-brand">
                         <a style={{fontSize: '75px'}}href='/wholeheartedly' className='mt-4 ml-4'>.wholeheartedly
                         </a>
-                        <a style={{fontSize: '15px'}}href='/wholeheartedly' className='mt-4 ml-4'>.about
+                        <a id="about-button" style={{fontSize: '15px'}} className='mt-4 ml-4'>.about
                         </a>
-                        <a style={{fontSize: '15px'}}href='/wholeheartedly' className='mt-4 ml-4'>.contact
+                        <a style={{fontSize: '15px'}}href='/wholeheartedly/index' className='mt-4 ml-4'>.submissions
                         </a>
-                        <a style={{fontSize: '15px'}}href='wholeheartedly/new' className='mt-4 ml-4'>.submit
+                        <a style={{fontSize: '15px'}}href='/wholeheartedly/new' className='mt-4 ml-4'>.submit
+                        </a>
+                        <a style={{fontSize: '15px'}}href='/wholeheartedly/new' className='mt-4 ml-4'>.sign up/sign in
                         </a>
                         <div class="navbar-item has-dropdown is-hoverable">
                             <a style={{fontSize: '35px', color: '#3274dc'}} class="navbar-link">
@@ -44,14 +46,16 @@ class Layout extends React.Component {
                             </a>
 
                             <div class="navbar-dropdown">
-                            <a class="navbar-item">
-                                air volee
-                            </a>
+                                <a class="navbar-item" href='/releases/airvolee'>
+                                    air volee
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    </div>
                     </nav>
+                    <body>
                     {this.props.children}
+                    </body>
                     <footer>
                     </footer>
                 </body>

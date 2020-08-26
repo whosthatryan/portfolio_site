@@ -7,18 +7,18 @@ class Index2 extends React.Component {
     // const product = this.props.product
       return (
           <Layout>
-              <div>
-                  <div id="draggable" className="ui-widget-content">
-                  <div id="mydivheader">.storm</div>
-                    <video 
-                    style={{width: '200px'}, {height: '400px'}} controls
-                    autoplay 
+              <div id="container">
+                  {/* <div > */}
+                  {/* <div id="mydivheader">.storm</div> */}
+                    <video id="draggable" className="ui-widget-content"
+                    style={{width: '170px'}, {height: '390px'}} controls
+                    autoPlay 
                     loop 
                     muted 
                     preload="auto" 
                     poster="images/storm.png">
-                      <source src="../video/storm.mp4" type="video/mp4"/>
-                      <source src="../video/storm.webm" type="video/webm"/>
+                      <source src="../video/stormslow.mp4" type="video/mp4"/>
+                      <source src="../video/stormslow.webm" type="video/webm"/>
                       <p>Your browser doesn't support HTML video. Here is a <a href="storm.mp4">link to the video</a> instead.</p>
                     </video>
                   </div>
@@ -30,7 +30,7 @@ class Index2 extends React.Component {
                     Your browser does not support the audio element.
                     </audio>
                   </div>
-              </div>
+              {/* </div> */}
           </Layout>
       );
     }

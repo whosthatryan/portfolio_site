@@ -1,15 +1,47 @@
+body {
+  background-color: #333333;
+  height: 100vh;
+}
+
+footer {
+  background-color: 	#294c78;
+}
+
+/* home page video */
 #draggable {
     position: absolute;
     z-index: 9;
     background-color: 	#0a0a0a;
-    background-color: white;
+    /* background-color: white; */
     border: 1px solid #d3d3d3;
     text-align: center;
     /* border-radius: 5%; */
     width: 700px;
+    height: 375px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 80px;
+    left: 200px;
   }
   
+  /* home page audio */
   #draggable2 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    /* background-color: white; */
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 325px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 200px;
+    left: 750px; 
+  }
+
+
+  #draggable3 {
     position: absolute;
     z-index: 9;
     background-color: 	#0a0a0a;
@@ -17,15 +49,246 @@
     border: 1px solid #d3d3d3;
     text-align: center;
     /* border-radius: 5%; */
-    width: 300px;
+    width: 350;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 150px;
+    left: 50px;
+  }
+  /* show page card */
+  #draggable4 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 250px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 180px;
+    left: 100px; 
   }
 
+  /* about window */
+  #draggable5 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    color: white;
+    /* border-radius: 5%; */
+    width: 400px;
+    height: 300px;
+    background-image: url(/images/deathbeach.JPG);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 675px;
+    left: 100px;
+  }
+
+  /* about img */
+  #draggable5 > img{
+    size: 20%;
+  }
+
+  /* new page box */
+  #draggable7 {
+    justify-items: center;
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 400px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 80px;
+    left: 100px;
+  }
+
+  /* air volee video */
+  #draggable8 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    /* background-color: white; */
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 700px;
+    height: 375px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 70px;
+    left: 780px;
+  }
+  
+  /* air volee audio */
+  .draggable9 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    /* background-color: white; */
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 325px;
+    border: 7px solid black;
+    border-radius: 10px;
+  }
+
+  /* index page card */
+  #draggable10 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 250px;
+    border: 7px solid black;
+    border-radius: 10px;
+  }
+
+  /* edit page box */
+  #draggable11 {
+    justify-items: center;
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 400px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 200px;
+    left: 100px;
+  }
+
+  /* back */
+  #draggable12 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 165px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 600px;
+    left: -800px; 
+  }
+
+  /* show page video */
+  #draggable13 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    /* background-color: white; */
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 700px;
+    height: 410px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 60px;
+    left: 500px;
+  }
+  
+  /* show page audio */
+  #draggable14  {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    /* background-color: white; */
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 325px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 150px;
+    left: 700px; 
+  }
+
+  /* index back */
+  #draggable15 {
+    position: absolute;
+    z-index: 9;
+    background-color: 	#0a0a0a;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* border-radius: 5%; */
+    width: 165px;
+    border: 7px solid black;
+    border-radius: 10px;
+    top: 500px;
+    left: 120px; 
+  }
+  
+  #one {
+    top: -350px;
+    left: 410px;
+  }
+
+  #two {
+    top: -300px;
+    left: 370px;
+  }
+
+  #three {
+    top: -250px;
+    left: 390px;
+  }
+
+  #four {
+    top: -195px;
+    left: 420px;
+  }
+
+  #five {
+    top: -145px;
+    left: 600px;
+  }
+
+  #six {
+    top: -400px;
+    left: 870px;
+  }
+
+  #seven {
+    top: -375px;
+    left: 1090px;
+  } 
+
+#delete {
+  border-radius: 10%;
+}
+
+  /* audio header */
   #mydivheader {
-    padding: 10px;
-    cursor: move;
-    z-index: 10;
+    padding: 3px;
+    cursor: grabbing;
+    z-index: 70;
+    color: white;
     /* background-color: 	#3274dc; */
     background-color: 	#0a0a0a;
-    color: #3274dc;
+    /* color: #3274dc; */
+    color: white;
     /* border-radius: 100%; */
   }

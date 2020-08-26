@@ -1,44 +1,51 @@
-// const React = require('React');
-// const Layout = require('./components/Layout.jsx');
+const React = require('React');
+const Layout = require('./components/Layout.jsx');
 
-// class Index extends React.Component {
-//     render() {
-//         const product = this.props.product
-//       return (
-//           <Layout>
-//             <div>
-//               <h1 className='ml-4'></h1>
-//               <div className='container'>
-//                 {product.map((product, i) => {
-//                   return (
-//                     <div className='card is-inline-block mt-4 mx-5 box px-0 pt-0' style={{width: 270}} key={product._id}>
-//                       <div className='card-image' >
-//                         <figure className='image is-4by4'>
-//                           <a href={`/wholeheartedly/${product._id}`}><img src={`${product.img}`} /></a>
-//                         </figure>
-//                       </div>
-//                       <div className='card-content'>
-//                         <p className='title is-6'>
-//                           {product.name}
-//                         </p>
-//                         <p>
-//                           { product.description }
-//                         </p>
-//                         <p className='subtitle is-7'>
-//                           ${product.price}</p>
-//                         <p className='subtitle is-7'>{product.isForSale
-//                          ? `.available`
-//                          : `.unavailable`}
-//                         </p>
-//                   </div>
-//             </div>
-//                   );
-//                 })}
-//               </div>
-//             </div>
-//             </Layout>
-//       );
-//     }
-//   }
+class Index extends React.Component {
+    render() {
+        const product = this.props.product
+      return (
+          <Layout>
+            <p id="draggable15"style={{fontSize: '50px', marginLeft: '1000px'}}>
+              <a href="/wholeheartedly">
+                  .back
+              </a>
+            </p> 
+            <div id="container">
+              <h1 className='ml-4'></h1>
+              <div className='container'>
+                {product.map((product, i) => {
+                  return (
+                    <div className='card is-inline-block mt-4 mx-5 box px-0 pt-0' style={{width: 270, border: '7px solid black', borderRadius: '10px', backgroundColor: 'white'}} key={product._id}>
+                      <div className='card-image' >
+                        <figure className='image is-4by4'>
+                          <a href={`/wholeheartedly/${product._id}`}><img src={`${product.art}`} /></a>
+                        </figure>
+                      </div>
+                      <div className='card-content' style={{textAlign: 'center'}}>
+                        <p style={{fontSize: '40px'}} className='title is-6'>
+                          {product.name}
+                        </p>
+                        <p style={{fontSize: '25px', }}>
+                          { product.title }
+                        </p>
+                        <p className='subtitle is-7'>{product.isForSale
+                         ? `.available`
+                         : `.unavailable`}
+                        </p>
+                        <form id="delete" action={`/wholeheartedly/${product._id}?_method=DELETE`} method="POST">
+                            <input type="submit" value={`Delete`}/>
+                        </form>
+                  </div>
+                </div>
+                  );
+                })}
+              </div>
 
-//   module.exports = Index;
+        </div>
+            </Layout>
+      );
+    }
+  }
+
+  module.exports = Index;
