@@ -8,8 +8,6 @@ class Index2 extends React.Component {
       return (
           <Layout>
               <div id="container">
-                  {/* <div > */}
-                  {/* <div id="mydivheader">.storm</div> */}
                     <video id="draggable" className="ui-widget-content"
                     style={{width: '170px'}, {height: '390px'}} controls
                     autoPlay 
@@ -30,7 +28,6 @@ class Index2 extends React.Component {
                     Your browser does not support the audio element.
                     </audio>
                   </div>
-              {/* </div> */}
           </Layout>
       );
     }

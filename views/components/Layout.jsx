@@ -10,13 +10,13 @@ class Layout extends React.Component {
                     <script
                     src="https://code.jquery.com/jquery-3.5.1.min.js"
                     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-                    crossorigin="anonymous">
+                    crossOrigin="anonymous">
                     </script>
 
                     <script
                     src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
                     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-                    crossorigin="anonymous">
+                    crossOrigin="anonymous">
                     </script>
 
                     <script src="/js/index.js" defer></script>
@@ -40,13 +40,13 @@ class Layout extends React.Component {
                         </a>
                         <a style={{fontSize: '15px'}}href='/wholeheartedly/new' className='mt-4 ml-4'>.sign up/sign in
                         </a>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a style={{fontSize: '35px', color: '#3274dc'}} class="navbar-link">
+                        <div className="navbar-item has-dropdown is-hoverable">
+                            <a style={{fontSize: '35px', color: '#3274dc'}} className="navbar-link">
                             .releases
                             </a>
 
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item" href='/releases/airvolee'>
+                            <div className="navbar-dropdown">
+                                <a className="navbar-item" href='/releases/airvolee'>
                                     air volee
                                 </a>
                             </div>

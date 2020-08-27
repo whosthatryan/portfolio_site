@@ -18,11 +18,11 @@ class Edit extends React.Component {
             <form action={`/wholeheartedly/${product._id}?_method=PUT`} method="POST">
                 .name  <input type="text" name="name" defaultValue={product.name}/><br/>
                 .title  <input type="text" name="title" defaultValue={product.title}/><br/>
-                .art  <input type="text" name="art" value={product.art}/><br/>
+                .art  <input type="text" name="art" defaultValue={product.art}/><br/>
                 .audio  <input type="text" name="audio" defaultValue={product.audio}/><br/>
                 .video  <input type="text" name="video" defaultValue={product.video}/><br/>
-                .available  <input type="checkbox" name="isForSale" 
-                checked={product.isForSale}/><br/>
+                .available  <input type="checkbox" defaultValue="isForSale" 
+                onChange={product.isForSale}/><br/>
                 <div style={{marginBottom: '15px', marginTop: '10px'}}>
                   <input  type="submit" name="" value=".submit changes"/>
                 </div>

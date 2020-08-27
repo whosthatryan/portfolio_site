@@ -43,7 +43,7 @@ router.delete('/:id', (req, res) => {
 });
 
 //UPDATE
-router.put('submissions/:id', (req, res) => {
+router.put('/:id', (req, res) => {
     Product.findByIdAndUpdate({_id: req.params.id}, {...req.body}, (error, updatedProduct) => {  
         if (updatedProduct) {
                 console.log(updatedProduct); 
