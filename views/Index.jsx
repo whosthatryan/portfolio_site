@@ -6,12 +6,19 @@ class Index extends React.Component {
         const product = this.props.product
       return (
           <Layout>
-            <p id="draggable15"style={{fontSize: '50px', marginLeft: '1000px'}}>
+            <div id='main-body'>
+            {/* <p id="draggable15"style={{fontSize: '30px', marginLeft: '1000px'}}>
               <a href="/wholeheartedly">
-                  .back
+                  _back
               </a>
-            </p> 
+            </p>  */}
             <div id="container">
+                <img id='draggable16' src='https://i.imgur.com/OpzOEfl.png' href='https://whosthatryan.github.io/Portfolio_8-20/plant_game/'/>
+            </div>
+            <div id="container">
+                <img id='draggable17' src='https://i.imgur.com/v6uqnRR.png' href='https://better-bowl-front.herokuapp.com/home'/>
+            </div>
+            {/* <div id="container">
               <h1 className='ml-4'></h1>
               <div className='container'>
                 {product.map((product, i) => {
@@ -42,6 +49,7 @@ class Index extends React.Component {
                 })}
               </div>
 
+        </div> */}
         </div>
             </Layout>
       );
