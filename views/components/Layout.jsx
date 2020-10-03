@@ -106,12 +106,12 @@ class Layout extends React.Component {
                                     resume
                                 </a>
                                 <a id='github'
-                                    className='navbar-item' href='https://www.github.com/whosthatryan' target='_blank' style={{fontSize: '15px', color: '#3274dc'}}>
-                                    github
+                                    className='navbar-item' href='https://www.github.com/whosthatryan' target='_blank' style={{fontSize: '10px', color: '#3274dc'}}>
+                                    g i t h u b
                                 </a>
                                 <a id='github'
-                                    className='navbar-item' href='https://www.linkedin.com/in/ryancmclaughlin/' target='_blank' style={{fontSize: '15px', color: '#3274dc'}}>
-                                    linkedin
+                                    className='navbar-item' href='https://www.linkedin.com/in/ryancmclaughlin/' target='_blank' style={{fontSize: '10px', color: '#3274dc'}}>
+                                    l i n k e d i n
                                 </a>
                             </div>
                         </nav>
