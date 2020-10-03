@@ -1,27 +1,121 @@
 body {
-  background-color:#f1f0eb;
-  height: 100vh;
+  background-color:#c4dbf5;
+  height: 1000vh;
+  position: relative;
+  background-size: cover;
 }
 
-footer {
-  background-color: 	#294c78;
+.hidden {
+  display: none;
 }
 
 /* home page video */
-#draggable {
+#draggable1 {
     position: absolute;
     z-index: 9;
     background-color: 	#0a0a0a;
+    text-align: center;
+    width: 692px;
+    height: 365px;
+    border-radius: 7px!important;
+    overflow: hidden;
+    top: 50px;
+    left: 50px;
+    box-shadow: 0 8px 35px black;
+  }
+
+  .close1 {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close1:hover {
+    opacity: 1;
+  }
+  .close1:before, .close1:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color:white;
+  }
+  .close1:before {
+    transform: rotate(45deg);
+  }
+  .close1:after {
+    transform: rotate(-45deg);
+  }
+  
+  /* about window */
+  #draggable2 {
+    position: absolute;
+    padding: 10px 25px 10px 25px;
+    z-index: 9;
+    text-align: left;
+    color: white;
+    width: 400px;
+    height: 300px;
+    background-image: url(/images/deathbeach.JPG);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    border-radius: 7px;
+    top: 550px;
+    left: 50px;
+    box-shadow: 0 8px 35px black;
+  }
+  #draggable2 > img{
+    size: 20%;
+  }
+
+  .close2 {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close2:hover {
+    opacity: 1;
+  }
+  .close2:before, .close2:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: white;
+  }
+  .close2:before {
+    transform: rotate(45deg);
+  }
+  .close2:after {
+    transform: rotate(-45deg);
+  }
+
+  /*planted*/
+  #draggable3 {
+    position: absolute;
+    z-index: 9;
+    background-color: white;
     /* background-color: white; */
     border: 1px solid #d3d3d3;
     text-align: center;
-    /* border-radius: 5%; */
-    width: 692px;
-    height: 365px;
-    border: 2px black;
+    background-image: url("https://i.imgur.com/OpzOEfl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 330px;
+    height: 330px;
+    /* border: 2px solid white; */
     border-radius: 10px;
-    top: 80px;
-    left: 200px;
+    /* margin: 80px 0 0 200px; */
+    top: 145px;
+    left: 800px;
     box-shadow: 0 8px 35px black;
   }
 
@@ -51,272 +145,24 @@ footer {
     transform: rotate(-45deg);
   }
   
-  /* home page audio */
-  #draggable2 {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    /* background-color: white; */
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 325px;
-    border: 2px solid black;
-    border-radius: 10px;
-    top: 200px;
-    left: 750px; 
-    box-shadow: 0 8px 35px black;
-  }
-
-
-  #draggable3 {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    background-color: white;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 350;
-    border: 7px solid black;
-    border-radius: 10px;
-    top: 150px;
-    left: 50px;
-  }
-  /* show page card */
+  /*better bowl*/
   #draggable4 {
     position: absolute;
     z-index: 9;
-    background-color: 	#0a0a0a;
     background-color: white;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 250px;
-    border: 7px solid black;
-    border-radius: 10px;
-    top: 180px;
-    left: 100px; 
-  }
-
-  /* about window */
-  #draggable5 {
-    position: absolute;
-    padding: 10px 25px 10px 25px;
-    z-index: 9;
-    text-align: left;
-    color: white;
-    width: 400px;
-    height: 300px;
-    background-image: url(/images/deathbeach.JPG);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    border-radius: 10px;
-    top: 675px;
-    left: 100px;
-    box-shadow: 0 8px 35px black;
-  }
-
-  /* about img */
-  #draggable5 > img{
-    size: 20%;
-  }
-
-  .close1 {
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-  }
-  .close1:hover {
-    opacity: 1;
-  }
-  .close1:before, .close1:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 15px;
-    width: 2px;
-    background-color: white;
-  }
-  .close1:before {
-    transform: rotate(45deg);
-  }
-  .close1:after {
-    transform: rotate(-45deg);
-  }
-  
-
-  /* new page box */
-  #draggable7 {
-    justify-items: center;
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    background-color: white;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 400px;
-    border: 7px solid black;
-    border-radius: 10px;
-    top: 80px;
-    left: 100px;
-  }
-
-  /* air volee video */
-  #draggable8 {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    /* background-color: white; */
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 700px;
-    height: 375px;
-    border: 7px solid black;
-    border-radius: 10px;
-    top: 70px;
-    left: 780px;
-  }
-  
-  /* air volee audio */
-  .draggable9 {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    /* background-color: white; */
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 325px;
-    border: 7px solid black;
-    border-radius: 10px;
-  }
-
-  /* index page card */
-  #draggable10 {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    background-color: white;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 250px;
-    border: 7px solid black;
-    border-radius: 10px;
-  }
-
-  /* edit page box */
-  #draggable11 {
-    justify-items: center;
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    background-color: white;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 400px;
-    border: 7px solid black;
-    border-radius: 10px;
-    top: 200px;
-    left: 100px;
-  }
-
-  /* back */
-  #draggable12 {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    background-color: white;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 165px;
-    border: 7px solid black;
-    border-radius: 10px;
-    top: 600px;
-    left: -800px; 
-  }
-
-  /* show page video */
-  #draggable13 {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    /* background-color: white; */
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 700px;
-    height: 410px;
-    border: 7px solid black;
-    border-radius: 10px;
-    top: 60px;
-    left: 500px;
-  }
-  
-  /* show page audio */
-  #draggable14  {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    /* background-color: white; */
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 325px;
-    border: 7px solid black;
-    border-radius: 10px;
-    top: 150px;
-    left: 700px; 
-  }
-
-  /* index back */
-  #draggable15 {
-    position: absolute;
-    z-index: 9;
-    background-color: 	#0a0a0a;
-    background-color: white;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    /* border-radius: 5%; */
-    width: 105px;
-    /* border: 2px solid white; */
-    border-radius: 10px;
-    top: 250px;
-    right: 950px;
-    box-shadow: 0 8px 35px black;
-  }
-
-  /*planted*/
-  #draggable16 {
-    position: absolute;
-    z-index: 9;
-    background-color: white;
-    /* background-color: white; */
-    border: 1px solid #d3d3d3;
-    text-align: center;
-    background-image: url("https://i.imgur.com/OpzOEfl.png");
+    background-image: url("https://i.imgur.com/v6uqnRR.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 330px;
-    height: 330px;
-    /* border: 2px solid white; */
+    width: 520px;
+    height: 180px;
     border-radius: 10px;
-    /* margin: 80px 0 0 200px; */
-    top: 80px;
-    left: 100px;
+    top: 800px;
+    left: 150px;
     box-shadow: 0 8px 35px black;
   }
 
-  .close2 {
+  .close4 {
     position: absolute;
     right: 0px;
     top: 10px;
@@ -324,10 +170,10 @@ footer {
     height: 32px;
     opacity: 0.3;
   }
-  .close2:hover {
+  .close4:hover {
     opacity: 1;
   }
-  .close2:before, .close2:after {
+  .close4:before, .close4:after {
     position: absolute;
     left: 15px;
     content: ' ';
@@ -335,76 +181,254 @@ footer {
     width: 2px;
     background-color:white;
   }
-  .close2:before {
+  .close4:before {
     transform: rotate(45deg);
   }
-  .close2:after {
+  .close4:after {
     transform: rotate(-45deg);
   }
-  
 
-  #draggable17 {
+  /* effexor ep */
+  #draggable5 {
     position: absolute;
     z-index: 9;
-    background-color: white;
+    background-color: #c9bcbb;
     text-align: center;
-    width: 520px;
-    height: 180px;
-    /* border: 2px solid white; */
-    border-radius: 10px;
-    bottom: 200px;
+    width: 350px;
+    border-radius: 7px;
+    top: 175px;
     left: 550px;
     box-shadow: 0 8px 35px black;
+    overflow: hidden;
+
   }
+
+  .close5 {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close5:hover {
+    opacity: 1;
+  }
+  .close5:before, .close5:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color:white;
+  }
+  .close5:before {
+    transform: rotate(45deg);
+  }
+  .close5:after {
+    transform: rotate(-45deg);
+  }
+
+  /* s/t */
+  #draggable6 {
+    position: absolute;
+    z-index: 9;
+    background-color: #5f6b77;
+    text-align: center;
+    width: 350px;
+    border-radius: 7px;
+    top: 300px;
+    left: 100px;
+    box-shadow: 0 8px 35px black;
+    overflow: hidden;
+
+  }
+
+  .close6 {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close6:hover {
+    opacity: 1;
+  }
+  .close6:before, .close6:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color:white;
+  }
+  .close6:before {
+    transform: rotate(45deg);
+  }
+  .close6:after {
+    transform: rotate(-45deg);
+  }
+
+    /* ready */
+    #draggable9 {
+      position: absolute;
+      z-index: 9;
+      background-color: 	#599067;
+      text-align: center;
+      width: 350px;
+      border-radius: 7px;
+      top: 600px;
+      left: 900px;
+      box-shadow: 0 8px 35px black;
+      overflow: hidden;
   
-  #one {
-    top: -350px;
-    left: 410px;
-  }
+    }
+  
+    .close9 {
+      position: absolute;
+      right: 0px;
+      top: 5px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close9:hover {
+      opacity: 1;
+    }
+    .close9:before, .close9:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color:white;
+    }
+    .close9:before {
+      transform: rotate(45deg);
+    }
+    .close9:after {
+      transform: rotate(-45deg);
+    }
 
-  #two {
-    top: -300px;
-    left: 370px;
-  }
-
-  #three {
-    top: -250px;
-    left: 390px;
-  }
-
-  #four {
-    top: -195px;
-    left: 420px;
-  }
-
-  #five {
-    top: -145px;
-    left: 600px;
-  }
-
-  #six {
-    top: -400px;
-    left: 870px;
-  }
-
-  #seven {
-    top: -375px;
-    left: 1090px;
-  } 
-
-#delete {
-  border-radius: 10%;
-}
-
-  /* audio header */
-  #mydivheader {
-    padding: 3px;
-    cursor: grabbing;
-    z-index: 70;
+  /* pic window */
+  #draggable7 {
+    position: absolute;
+    
+    z-index: 9;
+    text-align: left;
     color: white;
-    /* background-color: 	#3274dc; */
-    background-color: 	#0a0a0a;
-    /* color: #3274dc; */
-    color: white;
-    /* border-radius: 100%; */
+    width: 200px;
+    height: 200px;
+    background-image: url(https://i.imgur.com/hhPUtjm.jpg?2);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 7px;
+    top: 550px;
+    left: 500px;
+    box-shadow: 0 8px 35px black;
   }
+  #draggable7 > img{
+    size: 20%;
+  }
+
+  .close7 {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close7:hover {
+    opacity: 1;
+  }
+  .close7:before, .close7:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: white;
+  }
+  .close7:before {
+    transform: rotate(45deg);
+  }
+  .close7:after {
+    transform: rotate(-45deg);
+  }
+
+  .nested.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    margin: -40% 0 0 100%
+  }
+
+  .dropdown-trigger > button {
+    padding: 0px 0px;
+    border: 0px;
+
+  }
+
+  /* resume */
+  #draggable8 {
+    position: absolute;
+    z-index: 9;
+    text-align: left;
+    color: white;
+    width: 550px;
+    height: 710px;
+    overflow: hidden;
+    background-image: url(https://i.imgur.com/hhPUtjm.jpg?2);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 7px;
+    top: 300px;
+    left: 650px;
+    box-shadow: 0 8px 35px black;
+  }
+  #draggable8 > img{
+    size: cover;
+  }
+
+  .close8 {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close8:hover {
+    opacity: 1;
+  }
+  .close8:before, .close8:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: white;
+  }
+  .close8:before {
+    transform: rotate(45deg);
+  }
+  .close8:after {
+    transform: rotate(-45deg);
+  }
+
+  .nested.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    margin: -40% 0 0 100%
+  }
+
+  .dropdown-trigger > button {
+    padding: 0px 0px;
+    border: 0px;
+
+  }
+
+  

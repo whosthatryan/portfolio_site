@@ -21,6 +21,9 @@ class Layout extends React.Component {
 
                     <script src='/js/index.js' defer></script>
 
+                    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
                     <link rel='stylesheet' href='/css/style.css'/>
 
                     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css'/>
@@ -29,56 +32,101 @@ class Layout extends React.Component {
                 </head>
                 <body> 
                     <div className='is-family-secondary has-text-weight-bold'>
-                        <nav className='navbar is-black' role='navigation' aria-label='main navigation'>
+                        <nav className='navbar is-transparent' role='navigation' aria-label='main navigation'>
                             <div className='navbar-brand'>
+                                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
                                 <div className="navbar-start">
-                                    <a id='about-button' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
-                                        ryan c mclaughlin
+                                    <a id='ryPic' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
+                                        ryan
                                     </a>
-                        {/* <a className='navbar-item'  id='about-button' style={{fontSize: '15px'}} className='mt-4 ml-4'>about
-                        </a> */}
-                        {/* <a className='navbar-item'  style={{fontSize: '15px'}}href='/wholeheartedly/index' className='mt-4 ml-4'>software
-                        </a> */}
-                                <div className='navbar-item has-dropdown is-hoverable'>
-                                    <a style={{fontSize: '15px', color: '#3274dc'}} className='navbar-link'>
-                                        software
+                                    <a id='vid' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
+                                        c
                                     </a>
-                                    <div className='navbar-dropdown'>
-                                        <a 
-                                        id='planted'
-                                        className='navbar-item'>
-                                            planted: dead or alive
+                                    <a id='aboutBtn' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
+                                        mclaughlin
+                                    </a>
+                                    <div className='navbar-item has-dropdown is-hoverable'>
+                                        <a style={{fontSize: '15px', color: '#3274dc'}} className='navbar-link'>
+                                            software
                                         </a>
+                                        <div className='navbar-dropdown'>
+                                            <a 
+                                            id='plantedBtn'
+                                            className='navbar-item'>
+                                                planted: dead or alive
+                                            </a>
+                                            <a 
+                                            id='bowlBtn'
+                                            className='navbar-item'>
+                                                better bowl
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className='navbar-item has-dropdown is-hoverable'>
-                                    <a style={{fontSize: '15px', color: '#3274dc'}} className='navbar-link'>
+                                    <div class="navbar-item has-dropdown is-hoverable">
+                                        <a class="navbar-link" className='mt-4 ml-4'>
                                         music
+                                        </a>
+                                        <div class="navbar-dropdown">
+                                            <div class="nested navbar-item dropdown">
+                                                <div class="dropdown-trigger">
+                                                    <button class= 'is-family-secondary has-text-weight-bold' class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                        <span>
+                                                            air volee
+                                                        </span>
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                    <div class="dropdown-content">
+                                                        <a id='effexor' class="dropdown-item">
+                                                            effexor ep
+                                                        </a>
+                                                        <a id ='selfTitled' class="dropdown-item">
+                                                            s/t
+                                                        </a>
+                                                        <a id='ready' href="#" class="dropdown-item">
+                                                            ready
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div> 
+                                        </div> 
+                                        
+                                    </div> 
+                                </div> 
+                                <a id='resume'
+                                        className='navbar-item'>
+                                        resume
                                     </a>
-                                </div>
-                                <div className="navbar-end">
-                                    <div className='navbar-item'>
-                                        <div className='field is-grouped'>
-                                            <p className='control'>
-                                                <button className="button">
-                                                    <span className="icon">
-                                                    <i className="fab fa-github"></i>
-                                                    </span>
-                                                    <span>GitHub</span>
-                                                </button>
-                                            </p>
-                                            </div>
+                                <div class="navbar-end">
+                                    <div class="navbar-item">
+                                        <div class="buttons">
+                                            <button class="button is-small" >
+                                                <a href='https://www.github.com/whosthatryan'>
+                                                <span class="icon is-small">
+                                                    <i class="fab fa-github"></i>
+                                                </span>
+                                                <span>github</span>
+                                                </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </nav>
-                    <body>
+                    </div>
+                    <div>
                         {this.props.children}
-                    </body>
+                    </div>
                     <footer>
                     </footer>
-                    </div>
                 </body>
             </html>
         );
