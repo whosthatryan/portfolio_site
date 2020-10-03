@@ -34,11 +34,11 @@ class Layout extends React.Component {
                     <div className='is-family-secondary has-text-weight-bold'>
                         <nav className='navbar is-transparent' role='navigation' aria-label='main navigation'>
                             <div className='navbar-brand'>
-                                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                                {/* <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                                     <span aria-hidden="true"></span>
                                     <span aria-hidden="true"></span>
                                     <span aria-hidden="true"></span>
-                                </a>
+                                </a> */}
                                 <div className="navbar-start">
                                     <a id='ryPic' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
                                         ryan
@@ -67,16 +67,16 @@ class Layout extends React.Component {
                                         </div>
                                     </div>
                                     <div class="navbar-item has-dropdown is-hoverable">
-                                        <a class="navbar-link" className='mt-4 ml-4'>
+                                        <a class="navbar-link" className='mt-4 ml-4' style={{fontSize: '15px', color: '#3274dc'}}>
                                         music
                                         </a>
                                         <div class="navbar-dropdown">
                                             <div class="nested navbar-item dropdown">
                                                 <div class="dropdown-trigger">
                                                     <button class= 'is-family-secondary has-text-weight-bold' class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                                        <span>
+                                                        <a className='navbar-item'>
                                                             air volee
-                                                        </span>
+                                                        </a>
                                                         <span class="icon is-small">
                                                             <i class="fas fa-angle-down" aria-hidden="true"></i>
                                                         </span>
@@ -102,23 +102,17 @@ class Layout extends React.Component {
                                     </div> 
                                 </div> 
                                 <a id='resume'
-                                        className='navbar-item'>
-                                        resume
-                                    </a>
-                                <div class="navbar-end">
-                                    <div class="navbar-item">
-                                        <div class="buttons">
-                                            <button class="button is-small" >
-                                                <a href='https://www.github.com/whosthatryan'>
-                                                <span class="icon is-small">
-                                                    <i class="fab fa-github"></i>
-                                                </span>
-                                                <span>github</span>
-                                                </a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                    className='navbar-item' style={{fontSize: '15px', color: '#3274dc'}}>
+                                    resume
+                                </a>
+                                <a id='github'
+                                    className='navbar-item' href='https://www.github.com/whosthatryan' target='_blank' style={{fontSize: '15px', color: '#3274dc'}}>
+                                    github
+                                </a>
+                                <a id='github'
+                                    className='navbar-item' href='https://www.linkedin.com/in/ryancmclaughlin/' target='_blank' style={{fontSize: '15px', color: '#3274dc'}}>
+                                    linkedin
+                                </a>
                             </div>
                         </nav>
                     </div>

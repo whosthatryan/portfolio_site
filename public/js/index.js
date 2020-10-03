@@ -1,6 +1,10 @@
-$("#draggable1").draggable({ containment: '.container', scroll: false });
+$("#draggable0").draggable({ containment: '.container', scroll: false });
+$('#container').click(function() {
+  $('#draggable0').remove();
+})
+
 $('#vid').click(function() {
-  $("#container").append('<div id="draggable1"><a href="#" className="close1"><a><video className="ui-widget-content" autoPlay loop muted preload="auto"><source src="../video/leaves.mp4" type="video/mp4"/><source src="../video/leaves.webm" type="video/webm"/></video></div>');
+  $("#container").append('<div id="draggable1"><a href="#" class="close1"><a><video class="ui-widget-content" autoPlay loop muted preload="auto"><source src="../video/leaves.mp4" type="video/mp4"/><source src="../video/leaves.webm" type="video/webm"/></video></div>');
   $("#draggable1").draggable({ containment: '.container', scroll: false });
 });
 $('#container').click(function() {
@@ -19,7 +23,7 @@ $('#container').click(function() {
 
 
 $('#plantedBtn').click(function() {
-  $('#container').append('<div id="draggable3"><a href="https://whosthatryan.github.io/Portfolio_8-20/plant_game/"</a><a href="#" class="close3"></a></div>');
+  $('#container').append('<div id="draggable3"><a href="https://whosthatryan.github.io/Portfolio_8-20/plant_game/" target="_blank"}}><img src="https://i.imgur.com/OpzOEfl.png" alt="planted game" /></a><a href="#" class="close3"></a></div>');
   $("#draggable3").draggable({ containment: '.container', scroll: false });
 });
 $('#container').click(function() {
@@ -28,7 +32,7 @@ $('#container').click(function() {
 
 
 $('#bowlBtn').click(function() {
-  $('#container').append('<div id="draggable4"><a href="https://better-bowl-front.herokuapp.com/home"</a><a href="#" class="close4"></a></div>');
+  $('#container').append('<div id="draggable4"><a href="https://better-bowl-front.herokuapp.com/home" target="_blank"><img src="https://i.imgur.com/v6uqnRR.png" alt="better bowl"</a><a href="#" class="close4"></a></div>');
   $("#draggable4").draggable({ containment: '.container', scroll: false });
 });
 $('#container').click(function() {

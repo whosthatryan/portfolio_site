@@ -7,18 +7,16 @@ class Index2 extends React.Component {
       return (
           <Layout>
             <div id='container'>
-              <div id="draggable1" >
-                <a href="#" className="close1"></a>
+              <div id="draggable0" >
+                <a href="#" className="close0"></a>
                   <video className="ui-widget-content"
                   style={{width: '170px'}, {height: '390px'}}
                   autoPlay 
                   loop 
                   muted 
-                  preload="auto" 
-                  poster="images/storm.png">
+                  preload="auto">
                     <source src="../video/leaves.mp4" type="video/mp4"/>
                     <source src="../video/leaves.webm" type="video/webm"/>
-                    <p>Your browser doesn't support HTML video. Here is a <a href="storm.mp4">link to the video</a> instead.</p>
                   </video>
               </div>
             </div>
