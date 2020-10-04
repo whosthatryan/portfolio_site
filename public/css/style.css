@@ -12,19 +12,19 @@ body {
 /* home page video */
 #draggable0 {
   position: absolute;
-  z-index: 1;
+  /* z-index: 10; */
   background-color: 	#0a0a0a;
   text-align: center;
   width: 692px;
   height: 365px;
   border-radius: 7px!important;
   overflow: hidden;
-  top: 50px;
-  left: 50px;
+  top: 65px;
+  left: 65px;
   box-shadow: 0 8px 35px black;
 }
 
-.close0 {
+/* .close0 {
   position: absolute;
   right: 0px;
   top: 10px;
@@ -48,12 +48,12 @@ body {
 }
 .close0:after {
   transform: rotate(-45deg);
-}
+} */
 
 /* home page video pop up */
 #draggable1 {
     position: absolute;
-    z-index: 1;
+    /* z-index: 10; */
     background-color: 	#0a0a0a;
     text-align: center;
     width: 692px;
@@ -95,7 +95,7 @@ body {
   #draggable2 {
     position: absolute;
     padding: 10px 25px 10px 25px;
-    z-index: 1;
+    /* z-index: 10; */
     text-align: left;
     color: white;
     width: 400px;
@@ -141,7 +141,7 @@ body {
   /*planted*/
   #draggable3 {
     position: absolute;
-    z-index: 1;
+    /* z-index: 10; */
     background-color: white;
     /* background-color: white; */
     border: 1px solid #d3d3d3;
@@ -154,7 +154,7 @@ body {
     /* border: 2px solid white; */
     border-radius: 10px;
     /* margin: 80px 0 0 200px; */
-    top: 145px;
+    top: 160px;
     left: 800px;
     overflow: hidden;
     box-shadow: 0 8px 35px black;
@@ -196,7 +196,7 @@ body {
   /*better bowl*/
   #draggable4 {
     position: absolute;
-    z-index: 1;
+    /* z-index: 10; */
     background-color: white;
     /* background-image: url("https://i.imgur.com/v6uqnRR.png");
     background-repeat: no-repeat;
@@ -240,7 +240,7 @@ body {
   /* effexor ep */
   #draggable5 {
     position: absolute;
-    z-index: 1;
+    /* z-index: 10; */
     background-color: #c9bcbb;
     text-align: center;
     width: 350px;
@@ -281,7 +281,7 @@ body {
   /* s/t */
   #draggable6 {
     position: absolute;
-    z-index: 1;
+    /* z-index: 10; */
     background-color: #5f6b77;
     text-align: center;
     width: 350px;
@@ -322,7 +322,7 @@ body {
     /* ready */
     #draggable9 {
       position: absolute;
-      z-index: 1;
+      /* z-index: 10; */
       background-color: 	#599067;
       text-align: center;
       width: 350px;
@@ -363,7 +363,7 @@ body {
   /* pic window */
   #draggable7 {
     position: absolute;
-    z-index: 1;
+    /* z-index: 10; */
     text-align: left;
     color: white;
     width: 200px;
@@ -422,7 +422,7 @@ body {
   /* resume */
   #draggable8 {
     position: absolute;
-    z-index: 1;
+    /* z-index: 10; */
     text-align: left;
     color: white;
     width: 550px;
@@ -457,7 +457,7 @@ body {
     content: ' ';
     height: 15px;
     width: 2px;
-    background-color: white;
+    background-color: gray;
   }
   .close8:before {
     transform: rotate(45deg);

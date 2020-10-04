@@ -43,7 +43,7 @@ class Layout extends React.Component {
                                     <a id='ryPic' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
                                         ryan
                                     </a>
-                                    <a id='vid' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
+                                    <a id='helloWorld' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
                                         c
                                     </a>
                                     <a id='aboutBtn' className='navbar-item' style={{fontSize: '50px'}} className='mt-4 ml-4'>
