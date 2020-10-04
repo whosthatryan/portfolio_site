@@ -1,19 +1,19 @@
-require('dotenv').config()
+// require('dotenv').config()
 
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000; 
 const methodOverride = require('method-override');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
-const mongoURI = process.env.MONGO_URI;
-const db = mongoose.connection;
+// const mongoURI = process.env.MONGO_URI;
+// const db = mongoose.connection;
 
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
-db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
-db.on('connected', () => console.log('mongo connected: ', mongoURI));
-db.on('disconnected', () => console.log('mongo disconnected'));
+// db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
+// db.on('connected', () => console.log('mongo connected: ', mongoURI));
+// db.on('disconnected', () => console.log('mongo disconnected'));
 
 db.on( 'open' , ()=>{
     console.log('Connection made!');
@@ -28,7 +28,7 @@ app.use(express.static('public'));
 app.use(methodOverride('_method'));
 
 const indexController = require('./controllers/audio_video.js');
-app.use('/wholeheartedly', indexController);
+app.use('/portfolio', indexController);
 
 const releaseController = require('./controllers/releases.js');
 app.use('/releases', releaseController);
