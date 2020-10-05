@@ -9,15 +9,17 @@ class Index2 extends React.Component {
             <div id='container'>
               <div id="draggable0" >
                 <a href="#" className="close0"></a>
-                  <video className="ui-widget-content"
+                  <video 
+                  src="../video/leaves.mp4" type="video/mp4"
+                  className="ui-widget-content"
                   style={{width: '170px'}, {height: '390px'}}
                   autoPlay 
                   loop 
                   muted 
                   poster="../images/leavepic.png"
                   preload="auto">
-                    <source src="../video/leaves.mp4" type="video/mp4"/>
-                    <source src="../video/leaves.webm" type="video/webm"/>
+                    {/* <source />
+                    <source src="../video/leaves.webm" type="video/webm"/> */}
                   </video>
               </div>
             </div>
