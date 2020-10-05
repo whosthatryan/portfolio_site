@@ -1,24 +1,21 @@
 const express = require('express');
 const router = express.Router();
-const Product = require('../models/products.js');
+// const Product = require('../models/products.js');
 
-//Resume PAGE
-router.get('/index', (req, res) => {
-    Product.find({}, (err, allProducts) => {
-        res.render('../views/Resume', {
-            product: allProducts
-        });
-    });
-});
+// //Resume PAGE
+// router.get('/index', (req, res) => {
+//     Product.find({}, (err, allProducts) => {
+//         res.render('../views/Resume', {
+//             product: allProducts
+//         });
+//     });
+// });
 
 //Main PAGE
 router.get('/', (req, res) => {
-    Product.find({}, (err, allProducts) => {
-        res.render('../views/Main', {
-            product: allProducts
-        });
+        res.render('../views/Main')
     });
-});
+
 
 // //AIR VOLEE
 // router.get('/', (req, res) => {

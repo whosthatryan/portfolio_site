@@ -1,18 +1,3 @@
-(function() {
-  var highest = 1;
-
-  $.fn.bringToTop = function() {
-      this.css('z-index', ++highest); // increase highest by 1 and set the style
-  };
-})();
-
-$('.draggy').click(function() {
-  $(this).bringToTop();
-});
-
-$('.close0').click(function() {
-  $('#draggable0').remove();
-})
 $("#draggable0").draggable({ containment: '.container', scroll: false });
 
 
@@ -184,6 +169,18 @@ $('#ready').click(function() {
   $('#draggable9').remove();
   })
   $('.draggable9').click(function() {
+    $(this).siblings('.draggy').css('z-index', 10);
+    $(this).css('z-index', 11);
+ });
+});
+
+$('#scapesBtn').click(function() {
+  $('#container').append('<div id="draggable10" class="draggy"><a href="https://agitated-kowalevski-4fe251.netlify.app/" target="_blank"><img src="https://i.imgur.com/mRzAQrq.png" alt="scapes"</a><a href="#" class="close10"></a></div>');
+  $("#draggable10").draggable({ containment: '.container', scroll: false });
+  $('.close10').click(function() {
+    $('#draggable10').remove();
+  })
+  $('.draggable10').click(function() {
     $(this).siblings('.draggy').css('z-index', 10);
     $(this).css('z-index', 11);
  });
