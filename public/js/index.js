@@ -175,7 +175,7 @@ $('#ready').click(function() {
 });
 
 $('#scapesBtn').click(function() {
-  $('#container').append('<div id="draggable10" class="draggy"><a href="https://agitated-kowalevski-4fe251.netlify.app/" target="_blank"><img src="https://i.imgur.com/mRzAQrq.png" alt="scapes"</a><a href="#" class="close10"></a></div>');
+  $('#container').append('<div id="draggable10" class="draggy"><a href="https://scapes.netlify.app/" target="_blank"><img src="https://i.imgur.com/mRzAQrq.png" alt="scapes"</a><a href="#" class="close10"></a></div>');
   $("#draggable10").draggable({ containment: '.container', scroll: false });
   $('.close10').click(function() {
     $('#draggable10').remove();
