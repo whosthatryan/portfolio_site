@@ -10,7 +10,6 @@ class Index2 extends React.Component {
               <div id="draggable0" >
                 <a href="#" className="close0"></a>
                   <video className="ui-widget-content"
-                  controls
                   style={{width: '170px'}, {height: '390px'}}
                   autoPlay 
                   loop 
