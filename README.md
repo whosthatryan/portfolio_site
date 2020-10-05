@@ -1,5 +1,3 @@
-Wholeheartedly - Unit 2 Poject
+Portfolio
 
-Wholeheartedly is a larger concept that I plan to further explore beyond this project. As of now, the idea is a subscription-based collective offering music, art, and exclusive content to subscribers.
-
-Using Express, React, NodeJS, Mongoose, and jQuery, I have developed an early build of this site offering interactive UI and mood-focused content. 
+Using Express, React, NodeJS, and jQuery, I have developed an interactive experience inspired by web brutalism to display some of my works. 
