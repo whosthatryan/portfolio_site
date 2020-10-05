@@ -14,6 +14,7 @@ class Index2 extends React.Component {
                   autoPlay 
                   loop 
                   muted 
+                  poster="../images/leavepic.png"
                   preload="auto">
                     <source src="../video/leaves.mp4" type="video/mp4"/>
                     <source src="../video/leaves.webm" type="video/webm"/>
