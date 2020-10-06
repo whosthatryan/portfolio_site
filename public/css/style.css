@@ -13,15 +13,23 @@ body {
 #draggable0 {
   position: absolute;
   /* z-index: 10; */
-  background-color: 	#0a0a0a;
+  background-color: 	#bf8d7f;
+  
+  background-image: url('images/leavespic.png');
+  background-size: 100%;
+  object-position: bottom;
   text-align: center;
-  width: 692px;
-  height: 365px;
+  width: 620px;
+  height: 380px;
   border-radius: 7px!important;
   overflow: hidden;
-  top: 65px;
-  left: 65px;
+  top: 50px;
+  left: 50px;
   box-shadow: 0 8px 35px black;
+}
+
+#leaves {
+  margin: 20px 0 0 0;
 }
 
 /* .close0 {

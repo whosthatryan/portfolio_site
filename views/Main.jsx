@@ -9,17 +9,19 @@ class Index2 extends React.Component {
             <div id='container'>
               <div id="draggable0" >
                 <a href="#" className="close0"></a>
-                  <video className="ui-widget-content"
+                <iframe id="leaves" src="https://player.vimeo.com/video/465501117?background=1" width="640"
+                height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                  {/* <video className="ui-widget-content"
                   playsinline
                   style={{width: '170px'}, {height: '390px'}}
                   autoPlay 
                   loop 
                   muted 
-                  poster="../images/leavepic.png"
                   preload="auto">
                     <source src="../video/leaves.mp4" mimeType="video/mp4"/>
                     <source src="../video/leaves.webm" mimeType="video/webm"/>
-                  </video>
+                  </video> */}
               </div>
             </div>
           </Layout>
