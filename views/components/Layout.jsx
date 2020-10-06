@@ -98,6 +98,9 @@ class Layout extends React.Component {
                                                         <a id='ready' href="#" class="dropdown-item">
                                                             ready
                                                         </a>
+                                                        <a id='musicSite' href='https://www.ryancmclaughlin.com' target='_blank' class="dropdown-item">
+                                                            more
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 
