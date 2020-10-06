@@ -28,7 +28,7 @@ app.use(express.static('public'));
 app.use(methodOverride('_method'));
 
 const indexController = require('./controllers/audio_video.js');
-app.use('/portfolio', indexController);
+app.use('/', indexController);
 
 app.listen(PORT, () => {
     console.log('ayyy im workin heeyaahhhh')
