@@ -1,3 +1,472 @@
+  body {
+    background-color:#c4dbf5;
+    width: 175vw;
+    height: 180vh;
+    position: relative;
+    background-size: cover;
+  }
+  
+  .hidden {
+    display: none;
+  }
+   
+  /* home page video */
+  #draggable0 {
+    position: absolute;
+    /* z-index: 10; */
+    background-color: 		#f7ece4;
+    background-image: url('images/leavespic.png');
+    background-size: 100%;
+    object-position: bottom;
+    text-align: center;
+    width: 150vw;
+    height: 45vh;
+    border-radius: 7px!important;
+    overflow: hidden;
+    top: 50px;
+    left: 50px;
+    box-shadow: 0 8px 35px black;
+  }
+  
+  #leaves {
+    margin: 20px 0 0 0;
+  }
+  
+    /* about window */
+    #draggable2 {
+      position: absolute;
+      padding: 10px 25px 10px 25px;
+      /* z-index: 10; */
+      text-align: left;
+      color: white;
+      width: 400px;
+      height: 300px;
+      background-image: url('https://i.imgur.com/uz1fDxc.jpg');
+      background-repeat: no-repeat;
+      background-size: 400px;
+      border-radius: 7px;
+      top: 725px;
+      left: 50px;
+      box-shadow: 0 8px 35px black;
+    }
+    #draggable2 > img{
+      size: 20%;
+    }
+  
+    .close2 {
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close2:hover {
+      opacity: 1;
+    }
+    .close2:before, .close2:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color: white;
+    }
+    .close2:before {
+      transform: rotate(45deg);
+    }
+    .close2:after {
+      transform: rotate(-45deg);
+    }
+  
+    /* scapes*/
+    #draggable10 {
+      position: absolute;
+      /* padding: 10px 25px 10px 25px; */
+      /* z-index: 10; */
+      text-align: left;
+      color: white;
+      width: 300px;
+      height: 270px;
+      border-radius: 7px;
+      top: 650px;
+      left: 100px;
+      overflow: hidden;
+      box-shadow: 0 8px 35px black;
+    }
+    #draggable10 > img{
+      position: center;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .close10 {
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close10:hover {
+      opacity: 1;
+    }
+    .close10:before, .close10:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color: white;
+    }
+    .close10:before {
+      transform: rotate(45deg);
+    }
+    .close10:after {
+      transform: rotate(-45deg);
+    }
+  
+    /*planted*/
+    #draggable3 {
+      position: absolute;
+      /* z-index: 10; */
+      background-color: white;
+      /* background-color: white; */
+      border: 1px solid #d3d3d3;
+      /* background-image: url("https://i.imgur.com/OpzOEfl.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; */
+      width: 295px;
+      height: 260px;
+      /* border: 2px solid white; */
+      border-radius: 10px;
+      /* margin: 80px 0 0 200px; */
+      top: 860px;
+      left: 200px;
+      overflow: hidden;
+      box-shadow: 0 8px 35px black;
+    }
+  
+    #draggable3 > img {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      position: center;
+    }
+  
+    .close3 {
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close3:hover {
+      opacity: 1;
+    }
+    .close3:before, .close3:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color:white;
+    }
+    .close3:before {
+      transform: rotate(45deg);
+    }
+    .close3:after {
+      transform: rotate(-45deg);
+    }
+    
+    /*better bowl*/
+    #draggable4 {
+      position: absolute;
+      /* z-index: 10; */
+      background-color: white;
+      /* background-image: url("https://i.imgur.com/v6uqnRR.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; */
+      width: 520px;
+      height: 170px;
+      border-radius: 10px;
+      top: 1200px;
+      left: 80px;
+      overflow: hidden;
+      box-shadow: 0 8px 35px black;
+    }
+  
+    .close4 {
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close4:hover {
+      opacity: 1;
+    }
+    .close4:before, .close4:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color:gray;
+    }
+    .close4:before {
+      transform: rotate(45deg);
+    }
+    .close4:after {
+      transform: rotate(-45deg);
+    }
+  
+    /* effexor ep */
+    #draggable5 {
+      position: absolute;
+      /* z-index: 10; */
+      background-color: #c9bcbb;
+      text-align: center;
+      width: 350px;
+      border-radius: 7px;
+      top: 375px;
+      left: 120px;
+      box-shadow: 0 8px 35px black;
+      overflow: hidden;
+  
+    }
+  
+    .close5 {
+      position: absolute;
+      right: 0px;
+      top: 5px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close5:hover {
+      opacity: 1;
+    }
+    .close5:before, .close5:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color:white;
+    }
+    .close5:before {
+      transform: rotate(45deg);
+    }
+    .close5:after {
+      transform: rotate(-45deg);
+    }
+  
+    /* s/t */
+    #draggable6 {
+      position: absolute;
+      /* z-index: 10; */
+      background-color: #5f6b77;
+      text-align: center;
+      width: 350px;
+      border-radius: 7px;
+      top: 500px;
+      left: 100px;
+      box-shadow: 0 8px 35px black;
+      overflow: hidden;
+  
+    }
+  
+    .close6 {
+      position: absolute;
+      right: 0px;
+      top: 5px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close6:hover {
+      opacity: 1;
+    }
+    .close6:before, .close6:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color:white;
+    }
+    .close6:before {
+      transform: rotate(45deg);
+    }
+    .close6:after {
+      transform: rotate(-45deg);
+    }
+  
+      /* ready */
+      #draggable9 {
+        position: absolute;
+        /* z-index: 10; */
+        background-color: 	#599067;
+        text-align: center;
+        width: 350px;
+        border-radius: 7px;
+        top: 800px;
+        left: 100px;
+        box-shadow: 0 8px 35px black;
+        overflow: hidden;
+    
+      }
+    
+      .close9 {
+        position: absolute;
+        right: 0px;
+        top: 5px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.3;
+      }
+      .close9:hover {
+        opacity: 1;
+      }
+      .close9:before, .close9:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 15px;
+        width: 2px;
+        background-color:white;
+      }
+      .close9:before {
+        transform: rotate(45deg);
+      }
+      .close9:after {
+        transform: rotate(-45deg);
+      }
+  
+    /* pic window */
+    #draggable7 {
+      position: absolute;
+      /* z-index: 10; */
+      text-align: left;
+      color: white;
+      width: 200px;
+      height: 200px;
+      background-image: url(https://i.imgur.com/hhPUtjm.jpg?2);
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 7px;
+      top: 450px;
+      left: 200px;
+      box-shadow: 0 8px 35px black;
+    }
+    #draggable7 > img{
+      size: 20%;
+    }
+  
+    .close7 {
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close7:hover {
+      opacity: 1;
+    }
+    .close7:before, .close7:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color: white;
+    }
+    .close7:before {
+      transform: rotate(45deg);
+    }
+    .close7:after {
+      transform: rotate(-45deg);
+    }
+  
+    .nested.dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      margin: -40% 0 0 100%
+    }
+  
+    .dropdown-trigger > button {
+      padding: 0px 0px;
+      border: 0px;
+  
+    }
+  
+    /* resume */
+    #draggable8 {
+      position: absolute;
+      /* z-index: 10; */
+      text-align: left;
+      color: white;
+      width: 550px;
+      height: 710px;
+      overflow: hidden;
+      background-image: url(https://i.imgur.com/hhPUtjm.jpg?2);
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 7px;
+      top: 600px;
+      left: 55px;
+      box-shadow: 0 8px 35px black;
+    }
+    #draggable8 > img{
+      size: cover;
+    }
+  
+    .close8 {
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+    .close8:hover {
+      opacity: 1;
+    }
+    .close8:before, .close8:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 15px;
+      width: 2px;
+      background-color: gray;
+    }
+    .close8:before {
+      transform: rotate(45deg);
+    }
+    .close8:after {
+      transform: rotate(-45deg);
+    }
+  
+    .nested.dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      margin: -40% 0 0 100%
+    }
+  
+    .dropdown-trigger > button {
+      padding: 0px 0px;
+      border: 0px;
+    }
+
+@media only screen and (min-width: 376px) {
 body {
   background-color:#c4dbf5;
   height: 1000vh;
@@ -533,3 +1002,4 @@ body {
     border: 0px;
 
   }
+}

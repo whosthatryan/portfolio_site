@@ -23,6 +23,7 @@ class Layout extends React.Component {
 
                     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+                    <link rel="shortcut icon" href="public/images/favicon-16x16.png" type="image/png" /> 
 
                     <link rel='stylesheet' href='/css/style.css'/>
 

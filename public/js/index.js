@@ -25,7 +25,7 @@ $('#helloWorld').click(function() {
 
 
 $('#aboutBtn').click(function() {
-    $("#container").append('<div id="draggable2" class="draggy" class="module_holder"><div id="about" class="module_item"><a href="#" class="close2"></a>software developer and music producer based in nyc. deeply passionate about sound and technology.<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>itsryanmclaughlin@gmail.com</div>');
+    $("#container").append('<div id="draggable2" class="draggy" class="module_holder"><div id="about" class="module_item"><a href="#" class="close2"></a>creative producer and developer based in nyc. deeply passionate about sound and technology.<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>itsryanmclaughlin@gmail.com</div>');
     $('#draggable2').draggable({ containment: '.container', scroll: false });
     $('.close2').click(function() {
       $('#draggable2').remove();
@@ -143,7 +143,7 @@ $('#ryPic').click(function() {
 // });
 
 $('#resume').click(function() {
-  $("#container").append('<div id="draggable8" class="resume" class="draggy"><a href="#" class="close8"></a><img src="https://i.imgur.com/isi2pqW.png" alt="resume"/></div>');
+  $("#container").append('<div id="draggable8" class="resume" class="draggy"><a href="#" class="close8"></a><img src="https://i.imgur.com/cpRW15k.jpg" alt="resume"/></div>');
   $('#draggable8').draggable({ containment: '.container', scroll: false });
   $('.close8').click(function() {
     $('#draggable8').remove();
